@@ -2,9 +2,9 @@
 
 Archive of DPWE Matlab Sinemodel
 
-[Dan Ellis](http://www.ee.columbia.edu/~dpwe/) :
-[Resources](http://www.ee.columbia.edu/~dpwe/resources/):
-[Matlab](http://www.ee.columbia.edu/~dpwe/resources/matlab/):
+[Dan Ellis](http://www.ee.columbia.edu/~dpwe/) ::
+[Resources](http://www.ee.columbia.edu/~dpwe/resources/)::
+[Matlab](http://www.ee.columbia.edu/~dpwe/resources/matlab/)
 
 ![](sinemodel_thumb.png)
 
@@ -43,19 +43,19 @@ Contents
 
 <div>
 
-- [Sinewave analysis](#1)
-- [Resynthesis](#4)
-- [Residual extraction](#5)
-- [Modified resynthesis](#6)
-- [Integrated Sinusoid + Noise Time Scaling](#7)
-- [Further reading](#8)
-- [Download](#9)
-- [Referencing](#10)
-- [Acknowledgment](#11)
+- [Sinewave analysis](#sinewave-analysis)
+- [Resynthesis](#resynthesis)
+- [Residual extraction](#residual-extraction)
+- [Modified resynthesis](#modified-resynthesis)
+- [Integrated Sinusoid + Noise Time Scaling](#integrated-sinusoid--noise-time-scaling)
+- [Further reading](#further-reading)
+- [Download](#download)
+- [Referencing](#referencing)
+- [Acknowledgment](#acknowledgment)
 
 </div>
 
-Sinewave analysis
+[Sinewave analysis](#1)
 -----------------------
 
 Sinewave analysis is in concept quite simple: Form the short-time
@@ -356,5 +356,8 @@ the views of the Sponsors.
 ```
 
 \
-Published with MATLAB® 7.11, Tested in Octave 7.10 Under Ubuntu 20.04\
-:::
+Published with MATLAB® 7.11, Tested in Octave 7.10 Under Ubuntu 20.04
+
+Changelog:  
+
+- 2024/06/04: re-run on Octave 7.10, updated figures, added IF plot.
