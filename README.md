@@ -267,7 +267,7 @@ sound(dx2,sr)
 
 ![](demo_sinemodel_05.png)
 
-Integrated Sinusoid + Noise Time Scaling[]{#7}
+Integrated Sinusoid + Noise Time Scaling
 ----------------------------------------------
 
 The function y = [scalesound](scalesound.m)(d,sr,f) wraps all the steps
@@ -286,7 +286,7 @@ soundsc(y,sr);
 
 ![](demo_sinemodel_06.png)
 
-Further reading[]
+Further reading
 ---------------------
 
 Here\'s a bunch of pointers to more information on sinewave modeling of
