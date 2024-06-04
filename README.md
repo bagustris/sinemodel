@@ -1,11 +1,11 @@
 # sinemodel
+
 Archive of DPWE Matlab Sinemodel
 
 [Dan Ellis](http://www.ee.columbia.edu/~dpwe/) :
 [Resources](http://www.ee.columbia.edu/~dpwe/resources/):
 [Matlab](http://www.ee.columbia.edu/~dpwe/resources/matlab/):
 
-::: {.content}
 ![](sinemodel_thumb.png)
 
 Sinewave and Sinusoid+Noise Analysis/Synthesis in Matlab
@@ -43,19 +43,19 @@ Contents
 
 <div>
 
--   [Sinewave analysis](#1)
--   [Resynthesis](#4)
--   [Residual extraction](#5)
--   [Modified resynthesis](#6)
--   [Integrated Sinusoid + Noise Time Scaling](#7)
--   [Further reading](#8)
--   [Download](#9)
--   [Referencing](#10)
--   [Acknowledgment](#11)
+- [Sinewave analysis](#1)
+- [Resynthesis](#4)
+- [Residual extraction](#5)
+- [Modified resynthesis](#6)
+- [Integrated Sinusoid + Noise Time Scaling](#7)
+- [Further reading](#8)
+- [Download](#9)
+- [Referencing](#10)
+- [Acknowledgment](#11)
 
 </div>
 
-Sinewave analysis[]{#1}
+Sinewave analysis
 -----------------------
 
 Sinewave analysis is in concept quite simple: Form the short-time
@@ -118,7 +118,7 @@ steps, so their magnitudes are set to zero and their frequencies are set
 to NaN for the steps where they don\'t exist (using NaN allows the
 plotting trick above, since NaN values are discarded by plot()).
 
-Resynthesis[]{#4}
+Resynthesis
 -----------------
 
 We can get a rough resynthesis based on this analysis by using a simple
@@ -141,7 +141,7 @@ sound(d,sr)
 
 ![](demo_sinemodel_03.png)
 
-Residual extraction[]{#5}
+Residual extraction
 -------------------------
 
 Tracking the harmonic peaks and resynthesizing them with sinusoids
@@ -226,10 +226,10 @@ size of F is 82 x 224
 
 ![](demo_sinemodel_04.png)
 
-Modified resynthesis[]{#6}
+Modified resynthesis
 --------------------------
 
-Now that we have the signal separate into harmonic and noisy parts, we
+Now that we have the signal separated into harmonic and noisy parts, we
 can try modifying them prior to resynthesis. For instance, we could slow
 down the sound by some factor simply by increasing the hop size used in
 resynthesis. For the noisy part, we could model it with noise-excited
@@ -286,7 +286,7 @@ soundsc(y,sr);
 
 ![](demo_sinemodel_06.png)
 
-Further reading[]{#8}
+Further reading[]
 ---------------------
 
 Here\'s a bunch of pointers to more information on sinewave modeling of
@@ -307,13 +307,27 @@ Harmonic modeling is a popular idea in speech analysis and synthesis.
 Yannis Stylianou has recently developed a clever variant of harmonic
 plus noise modeling, used as part of AT&T\'s latest speech synthesizer.
 
-Download[]{#9}
+## Instantaneous Frequency
+
+Use to following code to plot IF (instantanoues frequency).
+
+```bash
+octave fp_if
+```
+
+You can type `fp_if` inside Octave console. It needs `signal` package which depends on `control` package.
+The results of the figure (spectrogram and ifgram) are below.
+
+![](specgram.png)
+![](./if.png)
+
+Download
 --------------
 
 You can download all the code examples mentioned above (and this
 tutorial) in one compressed directory: [sinemodel.zip](sinemodel.zip) .
 
-Referencing[]{#10}
+Referencing
 ------------------
 
 If you use this code in your research and would like to acknowledge it
@@ -328,8 +342,8 @@ If you use this code in your research and would like to acknowledge it
     D. P. W. Ellis (2003) "Sinewave and Sinusoid+Noise Analysis/Synthesis in Matlab",
     web resource, available: http://www.ee.columbia.edu/~dpwe/resources/matlab/sinemodel
 
-Acknowledgment[]{#11}
----------------------
+Acknowledgment
+--------------
 
 This project was supported in part by the NSF under grant IIS-0716203.
 Any opinions, findings and conclusions or recommendations expressed in
@@ -342,5 +356,5 @@ the views of the Sponsors.
 ```
 
 \
-Published with MATLAB® 7.11\
+Published with MATLAB® 7.11, Tested in Octave 7.10 Under Ubuntu 20.04\
 :::
